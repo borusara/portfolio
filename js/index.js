@@ -16,7 +16,7 @@ var typed = new Typed('#typed', {
         'I like to read Manga.',
         'I like to play E-Games.',
         'I like to learn New Things.',
-        'I like you too â¤.',
+        'I like you too 💖.',
     ],
 });
 

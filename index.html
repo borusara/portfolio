@@ -88,8 +88,9 @@
             <h2 class="section-title">About Me</h2>
             <div class="row about-wrapper">
                 <div class="about-wrapper__image">
-                 <img id="randomImage" class="img-fluid rounded-img" src="https://random-api-world-b73144a39834.herokuapp.com/get_random_image" alt="profile">
-                  </div>  
+                   <img id="randomImage" class="img-fluid rounded-img" src="" alt="profile">
+                </div>
+
                 <div class="about-wrapper__info">
                     <p class="about-wrapper__info-text">
                               I'm  <span id="age">14</span>  years old and i love to solve errors whether is it related to life or programming. 
@@ -209,6 +210,9 @@
             })
             .catch(error => console.error('Error:', error));
     }
+
+    // Load a random image on page load
+    loadRandomImage();
 </script>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>

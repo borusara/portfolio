@@ -200,6 +200,16 @@
             </div>
         </div>
     </footer>
+    <script>
+        function loadRandomImage() {
+            fetch('/get_random_image')
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('randomImage').src = '/get_image/' + encodeURIComponent(data.image_url);
+                })
+                .catch(error => console.error('Error:', error));
+        }
+    </script>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script type="text/javascript" src="js/vanilla-tilt.min.js"></script>

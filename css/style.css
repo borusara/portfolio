@@ -274,7 +274,7 @@ screen and (-ms-high-contrast: none) {
     width: 100%
 }
 .project-wrapper__text-subtitle {
-    font-size: 2rem; /* Adjust the font size as needed */
+    font-size: 1.5rem; /* Adjust the font size as needed */
     color: #6c757d;    /* A subtle gray color */
     margin-top: 0.5rem; /* Add spacing above the subtitle */
     font-weight: 400;  /* Make it less bold */

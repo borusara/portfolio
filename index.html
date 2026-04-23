@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,7 +10,8 @@
 
     <meta name="title" content="Hi, I'm Aneek.">
     <meta name="description" content="Just an exedentasist.">
-    <meta name="keywords" content="javascript, python, aneek, shouko, shoushuke, muzan, primes, akatsuki, akatsukiapis, ">
+    <meta name="keywords"
+        content="javascript, python, aneek, shouko, shoushuke, muzan, primes, akatsuki, akatsukiapis, ">
     <meta name="theme-color" content="#9e9e9e">
 
     <meta property="og:type" content="website">
@@ -35,14 +35,30 @@
 
 <body>
     <header>
-    <nav id="navbar" class="">
-        <div class="nav-wrapper">
-            <div class="logo">
-                <a href="#hero"><i class=""></i><img width="150px" height="60px" src="images/logo.png"
-                        alt="aneebio.vercel.app"></a>
-            </div>
+        <nav id="navbar" class="">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <a href="#hero"><i class=""></i><img width="150px" height="60px" src="images/logo.png"
+                            alt="aneebio.vercel.app"></a>
+                </div>
 
-            <!-- Navbar Links -->
+                <!-- Navbar Links -->
+                <ul id="menu">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+
+        <!-- Menu Icon -->
+        <div class="menuIcon">
+            <span class="icon icon-bars"></span>
+            <span class="icon icon-bars overlay"></span>
+        </div>
+        <div class="overlay-menu">
             <ul id="menu">
                 <li><a href="#hero">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -50,110 +66,101 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
-    </nav>
-    
-    
-    <!-- Menu Icon -->
-    <div class="menuIcon">
-        <span class="icon icon-bars"></span>
-        <span class="icon icon-bars overlay"></span>
-    </div>
-    <div class="overlay-menu">
-        <ul id="menu">
-            <li><a href="#hero">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </div>
 
     </header>
     <!-- navbar ends here -->
 
     <main>
-    <div id="hero">
-        <section class="container">
-            <h1 class="hero-title">
-                Hi, my name is <span class="text-color-main">Aneek</span>
-                <br> <span class="typed"> <span id="typed"></span> </span>
-            </h1>
-            <p class="hero-cta">
-                <a class="cta-btn cta-btn--hero" href="#about">Learn more</a>
-            </p>
-        </section>
-        <section class="quote-container">
-            <h1 id="quote">Fetching....
-            </h1>
-        </section>
-    </div>
+        <div id="hero">
+            <section class="container">
+                <h1 class="hero-title">
+                    Hi, my name is <span class="text-color-main">Aneek</span>
+                    <br> <span class="typed"> <span id="typed"></span> </span>
+                </h1>
+                <p class="hero-cta">
+                    <a class="cta-btn cta-btn--hero" href="#about">Learn more</a>
+                </p>
+            </section>
+            <section class="quote-container">
+                <h1 id="quote">Fetching....
+                </h1>
+            </section>
+        </div>
 
 
-    <section id="about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="row about-wrapper">
-                <div class="about-wrapper__image">
-                   <img id="randomImage" class="img-fluid rounded-img" src="https://graph.org//file/d8cbed50a27abf1787f4f.jpg" alt="Boruto in Peace">
-                </div>
+        <section id="about">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="row about-wrapper">
+                    <div class="about-wrapper__image">
+                        <img id="randomImage" class="img-fluid rounded-img"
+                            src="https://graph.org//file/d8cbed50a27abf1787f4f.jpg" alt="Boruto in Peace">
+                    </div>
 
-                <div class="about-wrapper__info">
-                    <p class="about-wrapper__info-text">
-                              I'm  <span id="age">14</span>  years old and i love to solve errors whether is it related to life or programming. 
-                    </p>
-                    <p class="about-wrapper__info-text">
-                              My hobby is building things on the internet even if I dont know coding.<br>
-                              I want to be a developer because programming is awesome and programming for the internet is even more awesome.
-                    </p>
-                    <span class="about-wrapper__cta">
-                        <a href="https://github.com/borusara" class="cta-btn cta-btn--resume" target="_blank">View
-                            Github</a>
-                        <span class="break-hidden">
-                            <span class="about-language">
-                                <img class="image-language" src="images/BhYRmtrv35CC.png" alt="html">
-                                <img class="image-language" src="images/kVzSrAHntBH7.png" alt="css">
-                                <img class="image-language" src="images/m5q0AN9SLNDn.png" alt="javascript">
-                                <img class="image-language" src="images/vUHSMjV4oUeY.png" alt="node">
-                                <img class="image-language" src="images/n6bubtYdKhLV.png" alt="python">
+                    <div class="about-wrapper__info">
+                        <p class="about-wrapper__info-text">
+                            I'm <span id="age">14</span> years old and i love to solve errors whether is it related to
+                            life or programming.
+                        </p>
+                        <p class="about-wrapper__info-text">
+                            My hobby is building things on the internet even if I dont know coding.<br>
+                            I want to be a developer because programming is awesome and programming for the internet is
+                            even more awesome.
+                        </p>
+                        <span class="about-wrapper__cta">
+                            <a href="https://github.com/borusara" class="cta-btn cta-btn--resume" target="_blank">View
+                                Github</a>
+                            <span class="break-hidden">
+                                <span class="about-language">
+                                    <img class="image-language" src="images/BhYRmtrv35CC.png" alt="html">
+                                    <img class="image-language" src="images/kVzSrAHntBH7.png" alt="css">
+                                    <img class="image-language" src="images/m5q0AN9SLNDn.png" alt="javascript">
+                                    <img class="image-language" src="images/vUHSMjV4oUeY.png" alt="node">
+                                    <img class="image-language" src="images/n6bubtYdKhLV.png" alt="python">
+                                </span>
                             </span>
                         </span>
-                    </span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section id="projects">
-    <div class="container">
-        <div class="project-wrapper">
-            <h2 class="section-title dark-blue-text">Projects</h2>
-
-            <div class="row">
-                <div class="project-wrapper__image">
-                    <div class="thumbnail rounded">
-                        <img src="https://i.ibb.co/7hx1B4V/Chat-GPT-Image-Jun-12-2025-07-40-36-PM.png" class="img-fluid" alt="Dual Lever Announcement poster">
-                    </div>
-                </div>
-
-                <div class="project-wrapper__text">
-                    <h3 class="project-wrapper__text-title">Thetered Recurrence</h3>
-                    <h4 class="project-wrapper__text-subtitle">Genre: SCI-FI, slice of life, action, drama, gore, horror, mystery, supernatural</h4>
-                    <p class="project-wrapper__text-info">
-                        <br><b>"Thetered Recurrence"</b>
-                        Sixteen-year-old Margo lives in a world without war, stuck between high school boredom and bizarre dreams he can’t explain. Between chaotic mornings and a best friend who's too perfect for his own good, something beneath his normal life is starting to unravel.
-                    </p>
-                    <div class="project-wrapper__text-btns">
-                        <a href="ever.pdf" target="_blank" rel="noopener noreferrer"
-                            class="cta-btn cta-btn--projects">Read thetered recurrence</a>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
+        </section>
 
 
-                <!-- <div class="row">
+        <section id="projects">
+            <div class="container">
+                <div class="project-wrapper">
+                    <h2 class="section-title dark-blue-text">Projects</h2>
+
+                    <div class="row">
+                        <div class="project-wrapper__image">
+                            <div class="thumbnail rounded">
+                                <img src="https://i.ibb.co/7hx1B4V/Chat-GPT-Image-Jun-12-2025-07-40-36-PM.png"
+                                    class="img-fluid" alt="Dual Lever Announcement poster">
+                            </div>
+                        </div>
+
+                        <div class="project-wrapper__text">
+                            <h3 class="project-wrapper__text-title">Thetered Recurrence</h3>
+                            <h4 class="project-wrapper__text-subtitle">Genre: SCI-FI, slice of life, action, drama,
+                                gore, horror, mystery, supernatural</h4>
+                            <p class="project-wrapper__text-info">
+                                <br><b>"Thetered Recurrence"</b>
+                                Sixteen-year-old Margo lives in a world without war, stuck between high school boredom
+                                and bizarre dreams he can’t explain. Between chaotic mornings and a best friend who's
+                                too perfect for his own good, something beneath his normal life is starting to unravel.
+                            </p>
+                            <div class="project-wrapper__text-btns">
+                                <a href="ever.pdf" target="_blank" rel="noopener noreferrer"
+                                    class="cta-btn cta-btn--projects">Read thetered recurrence</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- <div class="row">
                     <div class="project-wrapper__text">
                         <h3 class="project-wrapper__text-title">WhatsApp BOT</h3>
                         <p class="project-wrapper__text-info">
@@ -174,21 +181,22 @@
                     </div>
                 </div> -->
 
-            </div>
         </div>
-    </section>
-    
+        </div>
+        </section>
 
 
-    <section id="contact">
-        <div class="container">
-            <h2 class="section-title">Contact</h2>
-            <div class="contact-wrapper">
-                <p class="contact-wrapper__text"></p>
-                <a href="https://telegram.me/shoushuke" class="cta-btn cta-btn--resume" target="_blank">Get in touch</a>
+
+        <section id="contact">
+            <div class="container">
+                <h2 class="section-title">Contact</h2>
+                <div class="contact-wrapper">
+                    <p class="contact-wrapper__text"></p>
+                    <a href="https://telegram.me/shoushuke" class="cta-btn cta-btn--resume" target="_blank">Get in
+                        touch</a>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
     </main>
 
@@ -212,19 +220,19 @@
             </div>
         </div>
     </footer>
-<script>
-    function loadRandomImage() {
-        fetch('/get_random_image')
-            .then(response => response.json())
-            .then(data => {
-                document.getElementById('randomImage').src = data.image_url;
-            })
-            .catch(error => console.error('Error:', error));
-    }
+    <script>
+        function loadRandomImage() {
+            fetch('/get_random_image')
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('randomImage').src = data.image_url;
+                })
+                .catch(error => console.error('Error:', error));
+        }
 
-    // Load a random image on page load
-    loadRandomImage();
-</script>
+        // Load a random image on page load
+        loadRandomImage();
+    </script>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script type="text/javascript" src="js/vanilla-tilt.min.js"></script>
